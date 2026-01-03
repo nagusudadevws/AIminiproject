@@ -1,3 +1,14 @@
+---
+title: Bytez Text-to-Video
+emoji: 🎬
+colorFrom: blue
+colorTo: purple
+sdk: gradio
+sdk_version: 6.2.0
+app_file: app.py
+pinned: false
+---
+
 # Bytez Text-to-Video Gradio App
 
 A simple Gradio interface for generating videos from text prompts using Bytez and the `ali-vilab/text-to-video-ms-1.7b` model.
@@ -55,6 +66,14 @@ A simple Gradio interface for generating videos from text prompts using Bytez an
 - Videos are generated using the Bytez API and the `ali-vilab/text-to-video-ms-1.7b` model
 - Make sure you have a valid Bytez API key before running the app
 
+## Deploying to Hugging Face Spaces
+
+1. **Set your Bytez API key as a Space secret**:
+   - Go to your Space settings
+   - Navigate to "Variables and secrets"
+   - Add a new secret named `BYTEZ_KEY` with your API key value
+
+2. The app will automatically use the `BYTEZ_KEY` environment variable from the Space secrets.
 
 ## video recording link 
 https://www.loom.com/share/46063ea6490f4fd0bfbe29066502c3ba

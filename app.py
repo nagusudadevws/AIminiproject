@@ -91,5 +91,6 @@ Enter a prompt, generate a short video, and preview it below.
 
     btn.click(fn=generate_video, inputs=[prompt], outputs=[video, status], concurrency_limit=2)
 
-demo.launch(show_api=False)
+if __name__ == "__main__":
+    demo.launch()
 
